@@ -5,6 +5,7 @@ This script will create machines in KVM prepared with docker and ssh key. It wil
 
 Create 3 nodes by running 
 ```
+Download CentOS ISO ---> ./cdimages/CentOS-7-x86_64-Minimal-1804.iso
 ./provision.sh 3
 ```
 
