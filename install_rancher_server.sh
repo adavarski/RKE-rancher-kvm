@@ -34,4 +34,4 @@ helm install stable/cert-manager \
 helm install rancher-latest/rancher \
   --name rancher \
   --namespace cattle-system \
-  --set hostname=k8s-prod-1
+  --set hostname=k8s-prod-1.example.com
