@@ -37,7 +37,7 @@ NAME              STATUS   ROLES                      AGE   VERSION
 
 $ kubectl get pods -o wide --sort-by="{.spec.nodeName}" --all-namespaces
 
-
+```
 # Install Rancher UI
 Install the Rancher Server (UI) via Helm with script: 
 Fore using it, you need to download the Helm client and have it in your path.
