@@ -33,14 +33,8 @@ NAME              STATUS   ROLES                      AGE   VERSION
 192.168.122.111   Ready    controlplane,etcd,worker   16m   v1.11.3
 192.168.122.112   Ready    controlplane,etcd,worker   16m   v1.11.3
 
-$ kubectl get pods -n kube-system
-NAME                                   READY   STATUS    RESTARTS   AGE
-canal-5rsvl                            3/3     Running   0          16m
-canal-rfgh6                            3/3     Running   0          16m
-kube-dns-7588d5b5f5-srqtl              3/3     Running   0          16m
-kube-dns-autoscaler-5db9bbb766-sbwvr   1/1     Running   0          16m
-metrics-server-97bc649d5-g7c7m         1/1     Running   0          16m
-```
+$ kubectl get pods -o wide --sort-by="{.spec.nodeName}" --all-namespaces
+
 
 # Install Rancher UI
 Install the Rancher Server (UI) via Helm with script: 
