@@ -53,3 +53,9 @@ vi install_rancher_server.sh
 ./install_rancher_server.sh
 ```
 It will create a ServiceAccound for Tiller and a ClusterRoleBinding for this ServiceAccount to a ClusteRole called cluster-admin. Then it installs Tiller, adds the repository for Rancher Server and installs Rancher and cert-manager.
+
+Troubleshooting:
+$ kubectl logs default-http-backend-797c5bc547-grdfd -n ingress-nginx
+Error from server (BadRequest): container "default-http-backend" in pod "default-http-backend-797c5bc547-grdfd" is not available
+$ kubectl -n ingress-nginx  describe rs/default-http-backend-797c5bc547
+
