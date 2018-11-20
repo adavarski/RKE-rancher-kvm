@@ -13,7 +13,9 @@ You will end up with 3 virtual machines having a user named rke with the SSH key
 
 By default, all nodes will be running etcd, controlplane and worker containers. Edit cluster.yml to change this to your liking. 
 
-Download rke https://github.com/rancher/rke/releases/tag/v0.1.11
+Download rke https://github.com/rancher/rke/releases/tag/v0.1.11 
+wget https://github.com/rancher/rke/releases/download/v0.1.11/rke_linux-amd64; chmod +x rke_linux-amd64; 
+sudo cp rke_linux-amd64 /usr/local/bin
 
 Then, simply run rke to create the cluster
 
