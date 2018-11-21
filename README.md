@@ -105,6 +105,7 @@ kube-system     tiller-deploy-57f988f854-w4f4j            1/1     Running     0 
 
 
 ```
+Add host to /etc/hosts file
 
 Access RKE console 
 
